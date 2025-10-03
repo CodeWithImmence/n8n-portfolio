@@ -5,7 +5,9 @@ FROM n8nio/n8n:latest
 EXPOSE 5678
 
 # Database settings
-
+ENV DB_TYPE=sqlite
+ENV DB_SQLITE_PATH=/home/node/.n8n/database.sqlite
+ENV DB_SQLITE_POOL_SIZE=5
 
 # Force IPv4 resolution
 ENV NODE_OPTIONS=--dns-result-order=ipv4first
