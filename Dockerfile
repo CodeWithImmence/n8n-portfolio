@@ -6,12 +6,9 @@ EXPOSE 5678
 
 # Database settings
 
-ENV DB_TYPE=postgresdb
-ENV DB_POSTGRESDB_HOST=${DB_HOST}
-ENV DB_POSTGRESDB_PORT=${DB_PORT}
-ENV DB_POSTGRESDB_DATABASE=${DB_NAME}
-ENV DB_POSTGRESDB_USER=${DB_USER}
-ENV DB_POSTGRESDB_PASSWORD=${DB_PASS}
+
+# Force IPv4 resolution
+ENV NODE_OPTIONS=--dns-result-order=ipv4first
 
 
 # Set environment variables
