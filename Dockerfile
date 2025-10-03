@@ -1,8 +1,10 @@
-DB_POSTGRESDB_HOST=postgres.railway.internal
-DB_POSTGRESDB_PORT=5432
-DB_POSTGRESDB_DATABASE=railway
-DB_POSTGRESDB_USER=postgres
-DB_POSTGRESDB_PASSWORD=SxUToZyaTcyIvGFJaXjMAUcJbkVGMOTu
+# Database settings
+ENV DB_TYPE=postgresdb
+ENV DB_POSTGRESDB_HOST=postgres.railway.internal
+ENV DB_POSTGRESDB_PORT=5432
+ENV DB_POSTGRESDB_DATABASE=railway
+ENV DB_POSTGRESDB_USER=postgres
+ENV DB_POSTGRESDB_PASSWORD=YourPostgresPasswordHere
 
 # Use official n8n image
 FROM n8nio/n8n:latest
