@@ -1,3 +1,9 @@
+# Use official n8n image
+FROM n8nio/n8n:latest
+
+# Expose default n8n port
+EXPOSE 5678
+
 # Database settings
 ENV DB_TYPE=postgresdb
 ENV DB_POSTGRESDB_HOST=postgres.railway.internal
@@ -5,12 +11,6 @@ ENV DB_POSTGRESDB_PORT=5432
 ENV DB_POSTGRESDB_DATABASE=railway
 ENV DB_POSTGRESDB_USER=postgres
 ENV DB_POSTGRESDB_PASSWORD=SxUToZyaTcyIvGFJaXjMAUcJbkVGMOTu
-
-# Use official n8n image
-FROM n8nio/n8n:latest
-
-# Expose default n8n port
-EXPOSE 5678
 
 # Set environment variables
 ENV N8N_BASIC_AUTH_ACTIVE=true
