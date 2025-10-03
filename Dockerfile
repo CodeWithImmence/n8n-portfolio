@@ -1,3 +1,10 @@
+DB_TYPE=postgresdb
+DB_POSTGRESDB_HOST=postgres.railway.internal
+DB_POSTGRESDB_PORT=5432
+DB_POSTGRESDB_DATABASErailway
+DB_POSTGRESDB_USER=postgres
+DB_POSTGRESDB_PASSWORD=SxUToZyaTcyIvGFJaXjMAUcJbkVGMOTu
+
 # Use official n8n image
 FROM n8nio/n8n:latest
 
